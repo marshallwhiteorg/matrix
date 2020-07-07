@@ -1,1 +1,1 @@
-![](images/ged_exterior.png)
+![](/images/ged_exterior.png)
