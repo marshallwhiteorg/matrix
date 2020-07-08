@@ -1,0 +1,6 @@
+# Build artifacts
+matrix_build/
+
+
+# macOS specific
+.DS_Store
