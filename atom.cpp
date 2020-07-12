@@ -11,7 +11,7 @@ Atom::Atom(int protons, int neutrons, int electrons)
   }
 }
 
-const int Atom::charge() {
+int Atom::charge() {
     return m_protons - m_electrons;
 }
       

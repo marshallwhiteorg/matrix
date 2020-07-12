@@ -5,7 +5,7 @@ public:
   const int m_protons;
 
   // This is in terms of elementary charge.
-  const int charge();
+  int charge();
 private:
   const int m_neutrons;
   const int m_electrons;
