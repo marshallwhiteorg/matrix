@@ -10,4 +10,3 @@ private:
   const int m_neutrons;
   const int m_electrons;
 };
-  

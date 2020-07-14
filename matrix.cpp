@@ -3,8 +3,11 @@
 #include "atom.h"
 #include <iostream>
 
+using namespace std;
+
 int main() {
-  Atom hydrogen {1, 0, 1};
-  std::cout << "Charge: " << hydrogen.charge() << std::endl;
-  return 0;
+    int x = 0;
+    cout << x++ << "\n";
+    cout << x << "\n";
+    return 0;
 }
