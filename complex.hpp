@@ -1,4 +1,4 @@
-// Interface for complex numbers, a simple algebraic type
+// Interface for complex numbers, a simple arithmetic type
 // (a product type)
 
 class complex {
