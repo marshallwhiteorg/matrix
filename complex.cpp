@@ -1,7 +1,7 @@
 #include "complex.hpp"
 #include <math.h>
 
-complex::complex(double r, double i) :re{r}, im{i} {}
+complex<double>::complex(double r, double i) :re{r}, im{i} {}
 
 double complex::real() const { return re; }
 double complex::imag() const { return im; }

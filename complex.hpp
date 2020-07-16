@@ -1,18 +1,20 @@
 // Interface for complex numbers (with doubles),
 // a simple arithmetic (product) type.
 
+// Scalar T.
+template <typename T>
 class complex {
     double re, im;
 public:
-    complex(double r=0, double i=0);
+    complex(T r=0, T i=0);
 
     // Use 'const' to make this a constant function, i.e. these
     // promise not to modify any members.
-    double real() const;
-    double imag() const;
+    T real() const;
+    T imag() const;
 
-    void real(double r);
-    void imag(double i);
+    void real(T r);
+    void imag(T i);
 
     // These composite operators are used as fundamental
     // rather than the {+, -, *, /} operators because they
@@ -21,16 +23,14 @@ public:
     complex& operator+=(complex z);
     complex& operator-=(complex z);
     complex& operator*=(complex z);
-    complex& operator/=(complex z);    
-};
+    complex& operator/=(complex z);
 
-// The following operations don't need access
-// to complex's representation, so they are outside the class.
-// Stroustrup recommends this in TC++PL.
-complex operator+(complex a, complex b);
-complex operator-(complex a, complex b);
-complex operator-(complex a); // unary minus
-complex operator*(complex a, complex b);
-complex operator/(complex a, complex b);
-bool operator==(complex a, complex b);
-bool operator!=(complex a, complex b);
+    complex operator+(complex a);
+    complex operator-(complex a);
+    complex operator-(); // unary minus
+    complex operator*(complex a);
+    complex operator/(complex a);
+    bool operator==(complex a);
+    bool operator!=(complex a);
+
+};
